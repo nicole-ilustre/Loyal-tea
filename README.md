@@ -1,28 +1,16 @@
-# A starter webpack project for React
+This is our final group project in EDA.
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+I pitched the idea of loyalty card wallets and half of my cohort volunteered to work on it. I was the product owner and tech-lead of a team of 5. We worked on the project for a week and presented our MVP on graduation night.
 
-* Fork this repo
-* Rename your repo according to the app you're building
+This is currently still an MVP. I plan to keep working on it and keep adding features. Some features to be added:
+-Ability to delete user and business
+-More data statistics on the business side
+-Move the QR code generator to the business side to allow for customers to scan the business's QR code instead of the other way around.
+-Add QR Code scanner
+-Wrap it in Cordova
+-Play around with different authentications
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+We used React for front end and SQLite 3 for databases and Passport for authentication.
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
-
-Additional components should be placed in `client/components`.
-
-## Separate client/server
-
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-npm run client
-```
-and in the other:
-```sh
-npm run server
-```
 The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
 
